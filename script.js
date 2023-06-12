@@ -18,7 +18,6 @@ function setRandomColor() {
   document.getElementById('colorName2').style.color = textColor;
 }
 
-
 function getTextColor(backgroundColor) {
   const luminance = calculateLuminance(backgroundColor);
   return luminance > 0.5 ? '#000000' : '#ffffff';
@@ -33,7 +32,10 @@ function calculateLuminance(color) {
 
 window.addEventListener('load', setRandomColor);
 
-// screenshot code
+// Add click event listener
+document.getElementById('colorNames').addEventListener('click', setRandomColor);
+
+// Screenshot code
 document.addEventListener('keydown', function(event) {
   // Check if Ctrl+S is pressed
   if (event.ctrlKey && event.key === 's') {
@@ -62,4 +64,3 @@ function captureScreenshot() {
     link.click();
   });
 }
-
