@@ -1,0 +1,42 @@
+/* style.css */
+
+/* fonts 
+font-family: 'Koulen', cursive;
+font-family: 'Libre Barcode 128', cursive;
+font-family: 'VT323', monospace;
+*/
+
+body{
+  font-family: 'Koulen', cursive;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#colorBackground {
+  width: 100%;
+  height: 100vh;
+}
+
+#colorNames #colorName1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border: 5px solid;
+  width: 250px; /* Set the desired width */
+  height: 250px; /* Set the desired height */
+}
+
+#colorNames #colorName2 {
+  margin-top: 2px;
+  font-family: 'Libre Barcode 128', cursive;
+}
+
+#colorNames:hover{
+  scale: 101%;
+}
+
